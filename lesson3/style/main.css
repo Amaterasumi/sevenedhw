@@ -1,0 +1,239 @@
+.body {
+    font-family: 'M PLUS 1', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+.header {
+    font-family: 'M PLUS 1', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 32px; */
+    /* line-height: 70px; */
+    letter-spacing: 0.1em;
+    margin: 0.2em;
+}
+
+.header__firstw {
+    color: #3E45E8;
+}
+
+.header__secondw {
+    color: #E8C23E;
+}
+
+.banner {
+    min-height: 85vh;
+    max-height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    position: relative;
+}
+
+.banner__content {
+    /* background-color: green; */
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    /* top: 0;
+    bottom: 0;
+    margin: auto 0; */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 60px;
+}
+
+.banner_line {
+    padding-left: 22px;
+    border-left: 12px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-style: solid;
+}
+
+.banner__firstline {
+    border-image: linear-gradient(180deg, #00E0FF 0%, #1400FF 100%)1 100%;
+}
+
+.banner__secondline {
+    border-image: linear-gradient(180deg, #FFA800 0%, #FFF500 100%)1 100%;
+}
+
+.banner__text {
+    /* font-family: 'Inika'; */
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* font-size: 48px; */
+    /* line-height: 157.3%; */
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    font-size: 2em;
+}
+
+.banner_text-lastline {
+    margin-bottom: 2px;
+}
+
+.places__header {
+    margin-left: 60px;
+    margin-bottom: 7px;
+}
+
+.places__hr {
+    /* background: linear-gradient(90deg, #00E0FF 0%, #1400FF 100%); */
+    background: linear-gradient(180deg, #FFA800 0%, rgba(255, 245, 0, 0) 100%);
+    background: linear-gradient(90deg, #00E0FF 0%, #1400FF 50%, #FFA800 50%, #FFF500 80%, #FFFFFF 100%);
+    /* transform: rotate(-90deg); */
+    width: 50%;
+    height: 7px;
+    margin: auto 0;
+    border: 0px;
+}
+
+.places-cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.place-card {
+    width: 288px;
+    border: 5px solid #0D095F;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+.place-firstcard {
+    box-shadow: -10px 10px 15px rgba(0, 209, 255, 0.35);
+}
+
+.place-midlecard {
+    box-shadow: 0px 10px 15px rgba(0, 209, 255, 0.35);
+}
+
+.place-lastcard {
+    margin-right: 0px;
+    box-shadow: 10px 10px 15px rgba(0, 209, 255, 0.35);
+}
+
+.place-card__img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 10px 10px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.place-card__name {
+    color: #0072DB;
+    text-align: left;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.place-card__desckr {
+    color: #FF9900;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+.win-ukraine__header {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.win-ukraine__hr {
+    border: 0px;
+    width: 40%;
+    background: #1400FF;
+    height: 5px;
+}
+
+.win-ukraine__img {
+    display: block;
+    margin-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.win-ukraine__button {
+    background: #2A61F0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    width: 300px;
+    padding: 20 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: linear-gradient(180deg, #013235 0%, #0D0661 100%);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer__header {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.footer__header-firstw {
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 400;
+    color: #3E45E8;
+    letter-spacing: 0.1em;
+}
+
+.footer__header-secondw {
+    font-family: 'M PLUS 1';
+    font-style: normal;
+    font-weight: 400;
+    color: #DFE31E;
+    letter-spacing: 0.1em;
+}
+
+.footer__contact {
+    display: block;
+    font-family: 'Marcellus SC', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    color: #A89D9D;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer__social {
+    margin-top: 10px;
+}
+
+.footer__social-icon {
+    height: 32px;
+    padding-right: 15px;
+}

@@ -1,0 +1,400 @@
+        html {
+            --color-orange: #FFB742;
+            --color-grey1: #212529;
+            --color-grey2: #292B2E;
+            --color-grey3: rgba(255, 255, 255, 0.08);
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-transform: capitalize;
+            background: var(--color-grey1);
+            color: #FFF;
+            margin: 0;
+            transition: all 1500ms;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .header {
+            /* border: 2px solid yellow; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            padding: 0 5%;
+            padding-top: 17px;
+        }
+        
+        .header__nav {
+            display: flex;
+        }
+        
+        .header__nav-item {
+            text-decoration: none;
+            color: #FFF;
+            margin-right: 25px;
+        }
+        
+        .header__nav-item-selected {
+            color: var(--color-orange);
+        }
+        
+        section {
+            /* border: 2px solid yellow; */
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 6rem;
+            /* margin-right: 60px;
+    margin-left: 60px; */
+        }
+        
+        .section-hi {
+            text-align: center;
+            padding-top: 6rem;
+            margin-bottom: 6rem;
+        }
+        
+        .section-hi__subtitle {
+            font-family: 'Inter';
+        }
+        
+        .section-hi__subtitle-link {
+            color: var(--color-orange);
+        }
+        
+        .section-hi__title {
+            font-family: 'Inter';
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 45px;
+        }
+        
+        .section-hi__descr {
+            font-family: 'Inter';
+            font-weight: 300;
+        }
+        
+        .section-hi__img {
+            width: 150px;
+        }
+        
+        .section-skills {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            transition: all 2500ms;
+        }
+        
+        .skill-card {
+            background: var(--color-grey2);
+            border-radius: 10px;
+            margin-right: 24px;
+            padding: 12px 18px;
+            display: flex;
+            width: 30%;
+            cursor: pointer;
+            transition: all 2500ms;
+        }
+        
+        .skill-card__img {
+            width: 40px;
+        }
+        
+        .skill-card__text {
+            /* margin-left: 15px;
+      margin-right: 15px; */
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .skill-card__title {
+            color: var(--color-orange);
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .skill-card__descr {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .skill-card__icon-more {
+            width: 10px;
+            /* margin-left: auto; */
+        }
+        
+        .skill-card:hover {
+            background: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
+            filter: drop-shadow(10px 10px 51px rgba(0, 0, 0, 0.25));
+            transition: all 2500ms;
+        }
+        
+        .skill-card:hover .skill-card__text,
+        .skill-card:hover .skill-card__title {
+            color: var(--color-grey1)
+        }
+        
+        .section-about {
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-about__img {
+            width: 45%;
+        }
+        
+        .section-about__text {
+            align-self: baseline;
+        }
+        
+        .section-subtitle {
+            color: var(--color-orange);
+            background: var(--color-grey3);
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 5px 10px;
+        }
+        
+        .section-title {
+            font-family: 'Inter';
+            font-size: 32px;
+            margin-top: .1rem;
+            margin-bottom: .8rem;
+        }
+        
+        .section-descr {
+            font-weight: 300;
+            font-size: 12px;
+            margin-bottom: 40px;
+            color: #D5D5D5;
+        }
+        
+        .section-my-skills {
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+        
+        .section-my-skills__text {
+            max-width: 600px;
+        }
+        
+        .section-my-skills__pictures {
+            flex-wrap: wrap;
+            justify-self: flex-end;
+            align-items: baseline;
+            align-content: flex-start;
+            margin-left: 20px;
+            justify-content: right;
+            max-width: 420px;
+        }
+        
+        .section-my-skills__picture {
+            width: 60px;
+            height: 60px;
+            background: #383E45;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+        
+        .section-my-skills__picture>img {
+            width: 60%;
+            height: 60%;
+        }
+        
+        .section-portfolio {
+            margin-bottom: 80px;
+            /* text-align: center; */
+        }
+        
+        .section-portfolio__title-block {
+            text-align: center;
+        }
+        
+        .portfolio__subtitle {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .portfolio__nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .portfolio__nav-item {
+            text-decoration: none;
+            color: #FFF;
+            margin-right: 25px;
+        }
+        
+        .portfolio__nav-item-selected {
+            background: var(--color-orange);
+            color: var(--color-grey2);
+            width: 40px;
+            font-weight: 400;
+            /* height: 30px; */
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 3px;
+        }
+        
+        .portfolio__nav-item-selected:hover {
+            box-shadow: 2px 2px 2px #fff;
+        }
+        
+        .portfolio__images {
+            margin-top: 30px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .portfolio__column {
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+        }
+        
+        .portfolio__img {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        .testimonials-cards {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        
+        .testmonials-card {
+            width: 26%;
+            background: #FFFFFF;
+            border-radius: 5px;
+            padding: 2rem 1.5rem;
+            color: #000;
+            margin-right: 0.4rem;
+        }
+        
+        .testmonials-card__stars {
+            display: flex;
+            justify-content: left;
+        }
+        
+        .testmonials-card__star {
+            width: 13px;
+            margin-right: 8px;
+        }
+        
+        .testmonials-card__descr {
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: smaller;
+            line-height: 1.5rem;
+        }
+        
+        .testmonials-card__custumer {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        
+        .testmonials-card__custumer-photo {
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .testmonials-card__custumer-title {
+            margin-left: .7rem;
+        }
+        
+        .testmonials-card__custumer-name {
+            margin-top: 0;
+            margin-bottom: .2rem;
+            font-size: small;
+        }
+        
+        .testmonials-card__custumer-job {
+            margin: 0;
+            font-size: x-small;
+        }
+        
+        footer {
+            background: #1C1C1C;
+        }
+        
+        .last-gorizontal-item {
+            margin-right: 0;
+        }
+        
+        .button-hire {
+            text-decoration: none;
+            color: var(--color-grey1);
+            background: var(--color-orange);
+            width: 80px;
+            height: 20px;
+            border-radius: 30px;
+            padding: 5px 35px;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .footer-wrapper {
+            width: 90%;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        
+        .footer-column {
+            width: 20%;
+        }
+        
+        .footer__main-title {
+            color: var(--color-orange);
+            font-size: larger;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .footer__main-descr {
+            color: #D4D4D4;
+            font-size: smaller;
+            line-height: 1.5rem;
+            margin-top: 0;
+        }
+        
+        .footer__title {
+            font-size: small;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .footer__descr {
+            color: #7B7B7B;
+            font-size: smaller;
+            line-height: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0.3rem;
+        }

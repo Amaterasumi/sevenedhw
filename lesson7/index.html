@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css ">
+    <title>Form</title>
+</head>
+
+<body>
+    <main class="content">
+        <div class="container">
+
+
+            <section class="left-side">
+                <header class="left-side__header">
+                    <div class="logo">Kreativ</div>
+                </header>
+                <div class="data">
+                    <h3 class="data__title">Let’s get you started</h3>
+                    <form autocomplete="on">
+                        <div class="form__field">
+                            <label for="fullName">Full name</label>
+                            <input type="text" id="fullName" placeholder="Ade Tiger">
+                        </div>
+                        <div class="form__field">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" placeholder="yourname@email.com">
+                        </div>
+                        <div class="form__field">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" placeholder="+234 800 2738 9700">
+                        </div>
+                        <div class="form__field">
+                            <label for="password">Create password</label>
+                            <input type="password" id="password">
+                            <p class="password__err">Password must contain a minimum of 8 characters</p>
+                            <p class="password__err">Password must contain at least one symbol e.g. @, !</p>
+                        </div>
+                        <div class="form__field">
+                            <label for="location">Location <span class="location_add">(Optional)</span></label>
+                            <select name="location" id="location">
+                               <option disabled selected value="Dnipro">Select Location</option>
+                               <option class="active" value="Dnipro">Dnipro</option>
+                              <option class="active" value="Kyiv">Kyiv</option>
+                              <option class="active" value="Kharkiv">Kharkiv</option>
+                            </select>
+                        </div>
+                        <input type="button" value="Sign Up">
+                    </form>
+                    <p class="user">Already a user?
+                        <a href="#" class="login">Login</a>
+                    </p>
+                </div>
+            </section>
+            <section class="right-side">
+                <header class="right-side__header">
+                    <nav class="nav">
+                        <a href="#" class="nav__item">Home</a>
+                        <a href="#" class="nav__item">Contact</a>
+                    </nav>
+                </header>
+                <div class="quote-conteiner">
+                    <div class="quote">
+                        <h2 class="quote__text-shadow">“Creativity is intelligence having fun”
+                            <h2 class="quote__text">“Creativity is intelligence having fun”</h2>
+                        </h2>
+                        <p class="quote__author"> - Albert Einstein</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

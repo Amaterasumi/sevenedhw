@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,700;1,500;1,700&family=Volkhov&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <!-- JS for Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- My nav Start-->
+
+        <!-- <a href="#" class="logo-link">
+            <img src="img/logo.png" alt="Dapper Bully" class="logo">
+        </a>
+        <nav>
+            <a href="#" class="nav__item">Appointment</a>
+            <a href="#gallery" class="nav__item">Gallery</a>
+            <a href="#services" class="nav__item">Services</a>
+            <a href="#team" class="nav__item">Team</a>
+            <a href="#" class="nav__item">Reviews</a>
+            <a href="#contact" class="nav__item">Contact</a>
+        </nav> -->
+        <!-- My nav End -->
+        <!-- Bootstrap Nav Start navbar-expand-lg bg-light-->
+        <nav class="navbar  navbar-expand-lg navbar-dark fixed-top  bg-dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand logo-link" href="#">
+                    <img src="img/logo.png" alt="Dapper Bully" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active" aria-current="page" href="#">Appointment</a>
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link disabled" href="#">Reviews</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Bootstrap Nav End -->
+    </header>
+    <main>
+        <section class="gallery" id="gallery">
+            <div class="gallery__collumn gallery__collumn1">
+                <img class="gallery__vertical-img gallery-img3" src=" img/gallery_img1.jpg " alt=" " class="gallery__vertical-img ">
+            </div>
+            <div class="gallery__collumn gallery__collumn-center">
+                <div class="gallery__subcollumn gallery-img1">
+                    <img class="gallery__horisontal-img" src="img/gallery_img2.jpg " alt=" " class="gallery__horisontal-img ">
+                    <img class="gallery__horisontal-img" src="img/gallery_img3.jpg " alt=" " class="gallery__horisontal-img ">
+                </div>
+                <div class="gallery__subcollumn gallery-img2">
+                    <img class="gallery__horisontal-img" src="img/gallery_img4.jpg " alt=" " class="gallery__horisontal-img ">
+                    <img class="gallery__horisontal-img" src="img/gallery_img5.jpg " alt=" " class="gallery__horisontal-img ">
+                </div>
+            </div>
+            <div class="gallery__collumn gallery__collumn2">
+                <img class="gallery__vertical-img gallery-img4" src="img/gallery_img6.jpg " alt=" " class="gallery__vertical-img ">
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="services__collumn1">
+                <div class="services__item service1">
+                    <img src="img/services_cirkle1.png" alt="" class="services__item-img">
+                    <h3 class="services__item-title">Hair Styling</h3>
+                </div>
+                <div class="services__item service2">
+                    <img src="img/services_cirkle2.png" alt="" class="services__item-img">
+                    <h3 class="services__item-title">Beard Trimming</h3>
+                </div>
+                <div class="services__item service4">
+                    <img src="img/services_cirkle3.png" alt="" class="services__item-img">
+                    <h3 class="services__item-title">Smooth Shave</h3>
+                </div>
+                <div class="services__item service3">
+                    <img src="img/services_cirkle4.png" alt="" class="services__item-img">
+                    <h3 class="services__item-title">Hair Straightening</h3>
+                </div>
+            </div>
+            <div class="services__collumn2">
+                <img src="img/services_big-img.jpg" alt="" class="services__big-img">
+            </div>
+        </section>
+        <section class="team" id="team">
+            <h1 class="team__header">Meet Our Highly Skilled Experts</h1>
+            <div class="members ">
+                <div class="member" onmouseover="fillingNotHoverTeamMembers()" onmouseout="unFillingNotHoverTeamMembers()">
+                    <img src="img/team1.png " alt=" " class="member__photo ">
+                    <h3 class="member__name ">Meredith</h3>
+                </div>
+                <div class="member " onmouseover="fillingNotHoverTeamMembers()" onmouseout="unFillingNotHoverTeamMembers()">
+                    <img src="img/team2.png " alt=" " class="member__photo ">
+                    <h3 class="member__name ">Jason</h3>
+                </div>
+                <div class="member " onmouseover="fillingNotHoverTeamMembers()" onmouseout="unFillingNotHoverTeamMembers()">
+                    <img src="img/team3.png " alt=" " class="member__photo ">
+                    <h3 class="member__name ">Rayn</h3>
+                </div>
+                <div class="member " onmouseover="fillingNotHoverTeamMembers()" onmouseout="unFillingNotHoverTeamMembers()">
+                    <img src="img/team4.png " alt=" " class="member__photo ">
+                    <h3 class="member__name ">James</h3>
+                </div>
+            </div>
+        </section>
+        <section class="contact " id="contact ">
+            <div class="contact-form">
+                <h2 class="contact-form__title">Get in touch with Us and send a Message</h2>
+                <form autocomplete="on">
+
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0710875293985!2d98.28973037398616!3d7.991595904366394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305030008e352d11%3A0x68eafab98f6bd15d!2sAmora%20Beach%20Resort%20Phuket!5e0!3m2!1sru!2sth!4v1669449729012!5m2!1sru!2sth"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__col">
+            <div class="footer__row">
+                <p class="footer__label">Email : </p>
+                <a class="footer__text" href="mailto:kumarpratiyush1405@gmail.com">kumarpratiyush1405@gmail.com</a>
+            </div>
+            <div class="footer__row">
+                <p class="footer__label">Phone : </p>
+                <a class="footer__text" href="tel:+972723429834">+(972) 723429834</a>
+            </div>
+            <div class="footer__row">
+                <p class="footer__label">Headquarters : </p>
+                <p class="footer__text">836th Avenue, 3rd Floor,</p>
+            </div>
+            <div class="footer__row">
+                <p class="footer__label">New York</p>
+            </div>
+            <div class="footer__row">
+                <p class="footer__label">New York</p>
+            </div>
+        </div>
+        <div class="footer__col">
+            <h5 class="footer__header">Opening Hours</h5>
+            <div class="footer__row">
+                <p class="footer__label">Monday - Friday : 10:00 am - 05:00 pm</p>
+            </div>
+            <div class="footer__row">
+                <p class="footer__label">Saturday : 10:00 am - 02:00 pm</p>
+            </div>
+        </div>
+        <div class="footer__col">
+
+            <h6 class="footer__header-small">Connect With Us On</h6>
+            <div class="footer__col-container">
+                <div class="footer__row flex-star">
+                    <a class="footer__social-row" href="#">
+                        <img class="footer__icon" src="img/icon_insta.svg" alt="">
+                        <p class="footer__icon-text">Instagram</p>
+                    </a>
+                </div>
+                <div class="footer__row flex-star">
+                    <a class="footer__social-row" href="#">
+                        <img class="footer__icon" src="img/icon_fb.svg" alt="">
+                        <p class="footer__icon-text">Facebook</p>
+                    </a>
+                </div>
+                <div class="footer__row flex-star">
+                    <a class="footer__social-row" href="#">
+                        <img class="footer__icon" src="img/icon_twitter.svg" alt="">
+                        <p class="footer__icon-text">Twitter</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

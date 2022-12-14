@@ -27,6 +27,8 @@ h3 {
     width: 55%;
     background: #FFFFFF;
     padding-top: 12px;
+    background-image: url("../img/Stroke.svg");
+    background-repeat: no-repeat;
     /* padding-left: 32px;
     padding-bottom: 37px; */
 }

@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
+[class*="__container"] {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    border: 2px solid #c90738;
+}
+
+/* =========  ========= */
+
+
+
+
+
+
+
+/*====== Responsive =======*/
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    [class*="__container"] {
+        max-width: 960px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    [class*="__container"] {
+        max-width: 720px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    [class*="__container"] {
+        max-width: 540px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    [class*="__container"] {
+        padding: 0 15px;
+    }
+}

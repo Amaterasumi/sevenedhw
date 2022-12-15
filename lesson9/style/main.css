@@ -1,0 +1,111 @@
+html {
+    --color-orange: #FFB084;
+    --color-black: black;
+    --color-white: white;
+    --color-green: #29A71E;
+    --color-blue: #3675B0;
+    --color-red: #E13535;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+main {
+    background: #FFB084;
+    border-radius: 20px;
+    display: grid;
+    gap: 25px 25px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 30px;
+}
+
+.group {
+    background: var(--color-white);
+    box-shadow: 7px 7px 0px #000000;
+    border-radius: 20px;
+    padding: 15px 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ability-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gr-1 {
+    grid-row: 1/4;
+    /* text-align: center; */
+}
+
+.gr-2 {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.gr-3 {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.gr-5 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gr-6 {
+    grid-row: 2/4;
+    grid-column: 3;
+}
+
+.ability {
+    /* font-size: 12px; */
+    /* line-height: 14px; */
+}
+
+.ability-name {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 700;
+    /* font-size: 14px; */
+    /* line-height: 16px; */
+}
+
+.green {
+    color: var(--color-green);
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.blue {
+    color: var(--color-blue);
+}
+
+.shadow-green {
+    box-shadow: 7px 7px 0px var(--color-green);
+}
+
+.shadow-blue {
+    box-shadow: 7px 7px 0px var(--color-blue);
+}
+
+.shadow-red {
+    box-shadow: 7px 7px 0px var(--color-red);
+}

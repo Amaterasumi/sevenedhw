@@ -4,7 +4,8 @@ html {
     --color-black: black;
     --color-grey1: #E5E5E5;
     --color-grey2: rgba(0, 0, 0, 0.5);
-    ;
+    --bs-navbar-padding-y: 0;
+    --navbar-padding-y: 0;
 }
 
 body {

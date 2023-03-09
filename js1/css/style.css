@@ -1,0 +1,25 @@
+body {
+    /* text-align: center; */
+    margin-left: 150px;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+.color-1 {
+    color: crimson;
+}
+
+.color-2 {
+    color: green;
+}
+
+.color-3 {
+    color: blue;
+}
+
+.red {
+    color: red;
+    display: inline;
+}
